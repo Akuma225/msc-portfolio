@@ -1,129 +1,133 @@
 <!DOCTYPE html>
-<html lang="fr" style="scroll-behavior: smooth;">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>Portfolio - Cédric Datcha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.7; margin: 0; color: #0f172a; background: #f8fafc;">
+<body>
 
-  <header style="text-align: center; margin-bottom: 40px; padding: 40px 20px; background: linear-gradient(135deg, #0ea5e9, #6366f1); color: #ffffff; box-shadow: 0 6px 18px rgba(0,0,0,0.12);">
-    <h1 style="font-size: 40px; margin: 0 0 8px; letter-spacing: 0.5px;">Cédric Datcha</h1>
-    <p style="margin: 0 0 14px; font-size: 16px; opacity: 0.95;"><strong>Backend Developer spécialisé NestJS & Node.js</strong> | DevOps & Blockchain Apprentice</p>
-    <nav style="margin-top: 8px;">
-      <a href="#resume" style="color: #ffffff; text-decoration: none; padding: 8px 12px; border-radius: 9999px; background: rgba(255,255,255,0.14); display: inline-block; margin: 4px 6px; border: 1px solid rgba(255,255,255,0.25);">Résumé</a> | 
-      <a href="#experience" style="color: #ffffff; text-decoration: none; padding: 8px 12px; border-radius: 9999px; background: rgba(255,255,255,0.14); display: inline-block; margin: 4px 6px; border: 1px solid rgba(255,255,255,0.25);">Expérience</a> | 
-      <a href="#education" style="color: #ffffff; text-decoration: none; padding: 8px 12px; border-radius: 9999px; background: rgba(255,255,255,0.14); display: inline-block; margin: 4px 6px; border: 1px solid rgba(255,255,255,0.25);">Formation</a> | 
-      <a href="#skills" style="color: #ffffff; text-decoration: none; padding: 8px 12px; border-radius: 9999px; background: rgba(255,255,255,0.14); display: inline-block; margin: 4px 6px; border: 1px solid rgba(255,255,255,0.25);">Compétences</a> | 
-      <a href="#activities" style="color: #ffffff; text-decoration: none; padding: 8px 12px; border-radius: 9999px; background: rgba(255,255,255,0.14); display: inline-block; margin: 4px 6px; border: 1px solid rgba(255,255,255,0.25);">Activités</a> | 
-      <a href="#contact" style="color: #ffffff; text-decoration: none; padding: 8px 12px; border-radius: 9999px; background: rgba(255,255,255,0.14); display: inline-block; margin: 4px 6px; border: 1px solid rgba(255,255,255,0.25);">Contact</a>
+  <header class="header">
+    <h1 class="header__title">Cédric Datcha</h1>
+    <p class="header__subtitle"><strong>Backend Developer spécialisé NestJS & Node.js</strong> | DevOps & Blockchain Apprentice</p>
+    <nav class="nav">
+      <a href="#resume" class="nav__link">Résumé</a>
+      <a href="#experience" class="nav__link">Expérience</a>
+      <a href="#education" class="nav__link">Formation</a>
+      <a href="#skills" class="nav__link">Compétences</a>
+      <a href="#activities" class="nav__link">Activités</a>
+      <a href="#contact" class="nav__link">Contact</a>
     </nav>
   </header>
 
-  <main style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
-    <section id="resume" style="background: #ffffff; border-radius: 14px; padding: 24px; margin-bottom: 24px; box-shadow: 0 10px 20px rgba(2, 6, 23, 0.06); border: 1px solid #e5e7eb;">
-      <h2 style="margin: 0 0 12px; font-size: 24px; color: #0f172a; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Résumé</h2>
-      <p style="margin: 0; color: #334155;">Développeur backend passionné par l’architecture logicielle et les systèmes distribués, 
+  <main class="main">
+    <section id="resume" class="card">
+      <h2 class="card__title">Résumé</h2>
+      <p>Développeur backend passionné par l’architecture logicielle et les systèmes distribués, 
       j’aime concevoir des solutions robustes et scalables qui répondent à de vrais enjeux métier. 
       Curieux, rigoureux et orienté produit, je m’investis pleinement dans chaque projet, 
       du cadrage à la mise en production.</p>
     </section>
 
-    <section id="experience" style="background: #ffffff; border-radius: 14px; padding: 24px; margin-bottom: 24px; box-shadow: 0 10px 20px rgba(2, 6, 23, 0.06); border: 1px solid #e5e7eb;">
-      <h2 style="margin: 0 0 12px; font-size: 24px; color: #0f172a; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Expérience Professionnelle</h2>
+    <section id="experience" class="card">
+      <h2 class="card__title">Expérience Professionnelle</h2>
 
-      <article style="background: #f9fafb; border: 1px solid #e5e7eb; border-left: 4px solid #6366f1; border-radius: 12px; padding: 16px 18px; margin: 16px 0;">
-        <h3 style="margin: 0 0 6px; color: #111827; font-size: 18px;">Backend Developer - Diata Africa SAS</h3>
-        <p style="margin: 0 0 8px; color: #6b7280; font-size: 14px;"><time datetime="2024-11">Novembre 2024</time> - Aujourd’hui | Abidjan</p>
-        <ul style="margin: 0; padding-left: 18px; color: #334155;">
-          <li style="margin-bottom: 6px;">Développement d’API d’assurance en ligne (+20 % de souscriptions estimées).</li>
-          <li style="margin-bottom: 6px;">Conception d’APIs pour services grand public (billetterie, transactions sécurisées).</li>
+      <article class="article">
+        <h3>Backend Developer - Diata Africa SAS</h3>
+        <p class="article__meta"><time datetime="2024-11">Novembre 2024</time> - Aujourd’hui | Abidjan</p>
+        <ul class="list">
+          <li>Développement d’API d’assurance en ligne (+20 % de souscriptions estimées).</li>
+          <li>Conception d’APIs pour services grand public (billetterie, transactions sécurisées).</li>
         </ul>
       </article>
 
-      <article style="background: #f9fafb; border: 1px solid #e5e7eb; border-left: 4px solid #6366f1; border-radius: 12px; padding: 16px 18px; margin: 16px 0;">
-        <h3 style="margin: 0 0 6px; color: #111827; font-size: 18px;">Backend Developer - Everest Consulting</h3>
-        <p style="margin: 0 0 8px; color: #6b7280; font-size: 14px;"><time datetime="2023-11">Novembre 2023</time> - Novembre 2024 | Abidjan</p>
-        <ul style="margin: 0; padding-left: 18px; color: #334155;">
-          <li style="margin-bottom: 6px;">Développement d’une application de gestion de transport logistique.</li>
-          <li style="margin-bottom: 6px;">Refonte complète du site web de l’entreprise.</li>
+      <article class="article">
+        <h3>Backend Developer - Everest Consulting</h3>
+        <p class="article__meta"><time datetime="2023-11">Novembre 2023</time> - Novembre 2024 | Abidjan</p>
+        <ul class="list">
+          <li>Développement d’une application de gestion de transport logistique.</li>
+          <li>Refonte complète du site web de l’entreprise.</li>
         </ul>
       </article>
 
-      <article style="background: #f9fafb; border: 1px solid #e5e7eb; border-left: 4px solid #6366f1; border-radius: 12px; padding: 16px 18px; margin: 16px 0;">
-        <h3 style="margin: 0 0 6px; color: #111827; font-size: 18px;">Fullstack Developer - PI357 PLC</h3>
-        <p style="margin: 0; color: #6b7280; font-size: 14px;"><time datetime="2023-07">Juillet 2023</time> - Octobre 2023 | Yaou, Bonoua</p>
+      <article class="article">
+        <h3>Fullstack Developer - PI357 PLC</h3>
+        <p class="article__meta"><time datetime="2023-07">Juillet 2023</time> - Octobre 2023 | Yaou, Bonoua</p>
       </article>
 
-      <article style="background: #f9fafb; border: 1px solid #e5e7eb; border-left: 4px solid #6366f1; border-radius: 12px; padding: 16px 18px; margin: 16px 0;">
-        <h3 style="margin: 0 0 6px; color: #111827; font-size: 18px;">Web Development Instructor - Gomycode</h3>
-        <p style="margin: 0 0 8px; color: #6b7280; font-size: 14px;"><time datetime="2022-09">Septembre 2022</time> - Janvier 2023 | Abidjan</p>
-        <ul style="margin: 0; padding-left: 18px; color: #334155;">
-          <li style="margin-bottom: 6px;">Formation de +5 apprenants aux bases du développement web.</li>
+      <article class="article">
+        <h3>Web Development Instructor - Gomycode</h3>
+        <p class="article__meta"><time datetime="2022-09">Septembre 2022</time> - Janvier 2023 | Abidjan</p>
+        <ul class="list">
+          <li>Formation de +5 apprenants aux bases du développement web.</li>
         </ul>
       </article>
 
-      <article style="background: #f9fafb; border: 1px solid #e5e7eb; border-left: 4px solid #6366f1; border-radius: 12px; padding: 16px 18px; margin: 16px 0;">
-        <h3 style="margin: 0 0 6px; color: #111827; font-size: 18px;">Fullstack Developer - Even Media Interactive</h3>
-        <p style="margin: 0 0 8px; color: #6b7280; font-size: 14px;"><time datetime="2022-07">Juillet 2022</time> - Décembre 2022 | Abidjan</p>
-        <ul style="margin: 0; padding-left: 18px; color: #334155;">
-          <li style="margin-bottom: 6px;">Développement d’une plateforme e-learning (+30 % fréquentation estimée).</li>
-          <li style="margin-bottom: 6px;">Conception de sites vitrines pour Growth Music Group (+40 % trafic estimé).</li>
+      <article class="article">
+        <h3>Fullstack Developer - Even Media Interactive</h3>
+        <p class="article__meta"><time datetime="2022-07">Juillet 2022</time> - Décembre 2022 | Abidjan</p>
+        <ul class="list">
+          <li>Développement d’une plateforme e-learning (+30 % fréquentation estimée).</li>
+          <li>Conception de sites vitrines pour Growth Music Group (+40 % trafic estimé).</li>
         </ul>
       </article>
 
-      <article style="background: #f9fafb; border: 1px solid #e5e7eb; border-left: 4px solid #6366f1; border-radius: 12px; padding: 16px 18px; margin: 16px 0;">
-        <h3 style="margin: 0 0 6px; color: #111827; font-size: 18px;">Web Developer - Growth Continue Consulting</h3>
-        <p style="margin: 0; color: #6b7280; font-size: 14px;"><time datetime="2021-11">Novembre 2021</time> - Juin 2022 | Abidjan</p>
+      <article class="article">
+        <h3>Web Developer - Growth Continue Consulting</h3>
+        <p class="article__meta"><time datetime="2021-11">Novembre 2021</time> - Juin 2022 | Abidjan</p>
       </article>
     </section>
 
-    <section id="education" style="background: #ffffff; border-radius: 14px; padding: 24px; margin-bottom: 24px; box-shadow: 0 10px 20px rgba(2, 6, 23, 0.06); border: 1px solid #e5e7eb;">
-      <h2 style="margin: 0 0 12px; font-size: 24px; color: #0f172a; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Formation</h2>
-      <ul style="margin: 0; padding-left: 18px; color: #334155;">
-        <li style="margin-bottom: 6px;">Licence Professionnelle MIAGE - Université Polytechnique de Bingerville (2019 - 2022)</li>
-        <li style="margin-bottom: 6px;">Baccalauréat Série D, Mention Assez-Bien - Groupe Scolaire Jules Ferry (2018 - 2019)</li>
+    <section id="education" class="card">
+      <h2 class="card__title">Formation</h2>
+      <ul class="list">
+        <li>Licence Professionnelle MIAGE - Université Polytechnique de Bingerville (2019 - 2022)</li>
+        <li>Baccalauréat Série D, Mention Assez-Bien - Groupe Scolaire Jules Ferry (2018 - 2019)</li>
       </ul>
     </section>
 
-    <section id="skills" style="background: #ffffff; border-radius: 14px; padding: 24px; margin-bottom: 24px; box-shadow: 0 10px 20px rgba(2, 6, 23, 0.06); border: 1px solid #e5e7eb;">
-      <h2 style="margin: 0 0 12px; font-size: 24px; color: #0f172a; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Compétences</h2>
-      <h3 style="margin: 14px 0 6px; color: #111827;">Frontend</h3>
-      <p style="margin: 0 0 8px; color: #334155;">HTML, CSS, Bootstrap, JavaScript, Angular</p>
+    <section id="skills" class="card">
+      <h2 class="card__title">Compétences</h2>
+      <h3>Frontend</h3>
+      <p>HTML, CSS, Bootstrap, JavaScript, Angular</p>
 
-      <h3 style="margin: 14px 0 6px; color: #111827;">Backend</h3>
-      <p style="margin: 0 0 8px; color: #334155;">Node.js, Express.js, NestJS, PHP, Symfony, CodeIgniter</p>
+      <h3>Backend</h3>
+      <p>Node.js, Express.js, NestJS, PHP, Symfony, CodeIgniter</p>
 
-      <h3 style="margin: 14px 0 6px; color: #111827;">DevOps</h3>
-      <p style="margin: 0 0 8px; color: #334155;">Linux, NGINX, Docker, Kubernetes, Git (Github, Gitlab, Bitbucket)</p>
+      <h3>DevOps</h3>
+      <p>Linux, NGINX, Docker, Kubernetes, Git (Github, Gitlab, Bitbucket)</p>
 
-      <h3 style="margin: 14px 0 6px; color: #111827;">Bases de données</h3>
-      <p style="margin: 0 0 8px; color: #334155;">PostgreSQL, MySQL, MongoDB, Redis, Prisma, Sequelize</p>
+      <h3>Bases de données</h3>
+      <p>PostgreSQL, MySQL, MongoDB, Redis, Prisma, Sequelize</p>
 
-      <h3 style="margin: 14px 0 6px; color: #111827;">Autres</h3>
-      <p style="margin: 0; color: #334155;">Ionic, Solidity, Ethereum</p>
+      <h3>Autres</h3>
+      <p>Ionic, Solidity, Ethereum</p>
     </section>
 
-    <section id="activities" style="background: #ffffff; border-radius: 14px; padding: 24px; margin-bottom: 24px; box-shadow: 0 10px 20px rgba(2, 6, 23, 0.06); border: 1px solid #e5e7eb;">
-      <h2 style="margin: 0 0 12px; font-size: 24px; color: #0f172a; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Activités Sociales</h2>
-      <p style="margin: 0; color: #334155;">Fondateur de la communauté <strong>Digital Guild</strong> (Juin 2024), 
+    <section id="activities" class="card">
+      <h2 class="card__title">Activités Sociales</h2>
+      <p>Fondateur de la communauté <strong>Digital Guild</strong> (Juin 2024), 
       visant à rassembler aspirants et experts tech pour le partage d’expérience 
       et l’échange autour des sujets IT tendances.</p>
     </section>
 
-    <section id="contact" style="background: #ffffff; border-radius: 14px; padding: 24px; margin-bottom: 24px; box-shadow: 0 10px 20px rgba(2, 6, 23, 0.06); border: 1px solid #e5e7eb;">
-      <h2 style="margin: 0 0 12px; font-size: 24px; color: #0f172a; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Contact</h2>
-      <ul style="margin: 0; padding-left: 18px; color: #334155;">
-        <li style="margin-bottom: 6px;">Email : <a href="mailto:melcedricdatcha@gmail.com" style="color: #2563eb; text-decoration: none;">melcedricdatcha@gmail.com</a></li>
-        <li style="margin-bottom: 6px;">Téléphone : +225 0710236766</li>
-        <li style="margin-bottom: 6px;">WhatsApp : +225 0153981497</li>
-        <li style="margin-bottom: 6px;">Adresse : Abidjan, Cocody Riviera Anono</li>
-        <li style="margin-bottom: 0;">Portfolio : <a href="https://www.cedric-datcha.com" target="_blank" style="color: #2563eb; text-decoration: none;">www.cedric-datcha.com</a></li>
+    <section id="contact" class="card">
+      <h2 class="card__title">Contact</h2>
+      <ul class="list">
+        <li>Email : <a href="mailto:melcedricdatcha@gmail.com" class="link">melcedricdatcha@gmail.com</a></li>
+        <li>Téléphone : +225 0710236766</li>
+        <li>WhatsApp : +225 0153981497</li>
+        <li>Adresse : Abidjan, Cocody Riviera Anono</li>
+        <li>Portfolio : <a href="https://www.cedric-datcha.com" target="_blank" class="link">www.cedric-datcha.com</a></li>
       </ul>
     </section>
   </main>
 
-  <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #6b7280; border-top: 1px solid #e5e7eb; background: #f9fafb;">
-    <p style="margin: 0;">&copy; 2025 Cédric Datcha - Tous droits réservés</p>
+  <footer class="footer">
+    <p>&copy; 2025 Cédric Datcha - Tous droits réservés</p>
   </footer>
 
 </body>
